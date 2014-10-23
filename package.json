@@ -5,6 +5,10 @@
   "description": "An example Titanium project using gulp and CoffeeScript",
   "author": "Devin Weaver <suki@tritarget.org> (http://tritarget.org/)",
   "license": "WYWTPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sukima/ti-cs-gulp-example"
+  },
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "del": "^0.1.3",
