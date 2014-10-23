@@ -1,0 +1,16 @@
+{
+  "name": "ti-cs-gulp-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An example Titanium project using gulp and CoffeeScript",
+  "author": "Devin Weaver <suki@tritarget.org> (http://tritarget.org/)",
+  "license": "WYWTPL",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "del": "^0.1.3",
+    "gulp": "^3.8.9",
+    "gulp-coffee": "^2.2.0",
+    "gulp-util": "^3.0.1",
+    "titanium": "^3.4.0"
+  }
+}
