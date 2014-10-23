@@ -21,14 +21,18 @@ gulp.task "coffee", ->
     .pipe(gulp.dest(resourceDir))
 
 gulp.task "resources", ->
-  gulp.src(["./Resources/**/*", "!./Resources/**/*.js", "!./Resources/**/*.coffee"])
+  gulp.src(["./Resources/**/*", "!**/*.js", "!**/*.coffee"])
     .pipe(gulp.dest(resourceDir))
 
 gulp.task "tiapp", ->
   gulp.src("./tiapp.xml")
     .pipe(gulp.dest(prefix))
 
-gulp.task "precompile", ["js", "coffee", "resources", "tiapp"]
+gulp.task "i18n", ->
+  gulp.src("./i18n/**/*")
+    .pipe(gulp.dest(path.join prefix, "i18n"))
+
+gulp.task "precompile", ["js", "coffee", "resources", "i18n",  "tiapp"]
 
 gulp.task "build", ["precompile"], (done) ->
   spawn(
